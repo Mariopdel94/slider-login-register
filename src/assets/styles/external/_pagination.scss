@@ -1,0 +1,23 @@
+/* Pagination styles */
+.ngx-pagination .current {
+  background: transparent !important;
+  color: color(neutral, base) !important;
+  border: 2px solid color(primary, base);
+}
+
+.ngx-pagination a {
+  color: color(neutral, base) !important;
+  font-weight: normal;
+  &::after,
+  &.disabled::after,
+  &::before,
+  &.disabled::before {
+    margin: 0 !important;
+  }
+}
+
+.ngx-pagination {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}

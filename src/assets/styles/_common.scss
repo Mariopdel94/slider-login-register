@@ -1,0 +1,69 @@
+@import "./ui-elements/colors";
+
+$content-spacing: 3.5rem;
+$bar-height: 4.5rem;
+
+.user-avatar {
+	align-items: center;
+	border-radius: 50%;
+	display: flex;
+	height: 3rem;
+	justify-content: center;
+	overflow: hidden;
+	width: 3rem;
+
+	img {
+		object-fit: cover;
+		min-height: 100%;
+		min-width: 100%;
+	}
+}
+
+/** Helper classes **/
+.click {
+	cursor: pointer !important;
+}
+
+.full-width {
+	width: 100% !important;
+}
+
+.full-height {
+	height: 100% !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.inline-block {
+	display: inline-block !important;
+}
+
+.invisible {
+	opacity: 0 !important;
+}
+
+.mobile-min-width {
+	min-width: 320px !important;
+}
+
+.relative {
+	position: relative !important;
+}
+
+.uppercase {
+	text-transform: uppercase !important;
+}
+
+.wait {
+	cursor: wait !important;
+}
+
+.unselectable {
+	user-select: none !important;
+}
+
+.overflow-hidden {
+	overflow: hidden !important;
+}

@@ -1,0 +1,71 @@
+@import "./colors";
+
+@mixin span-underline($color: color(accent, base), $lineWidth: 2px) {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: $color;
+  }
+
+  &:after {
+    background-color: $color;
+    bottom: -0.25rem;
+    color: transparent;
+    content: '';
+    height: $lineWidth;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.span-underline {
+  @include span-underline();
+}
+
+/** Helper font-sizes **/
+.font-size-xxlarge { font-size: 3rem !important; }
+.font-size-xlarge { font-size: 2rem !important; }
+.font-size-large { font-size: 1.5rem !important; }
+.font-size-medium { font-size: 1.25rem !important; }
+.font-size-normal { font-size: 1rem !important; }
+.font-size-small { font-size: 0.90rem !important; }
+.font-size-xsmall { font-size: 0.5rem !important; }
+.font-size-xxsmall { font-size: 0.25rem !important; }
+
+.italic {
+	font-style: italic !important;
+}
+
+.semi-bold {
+	font-weight: 600 !important;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.black {
+  font-weight: 900 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}

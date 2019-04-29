@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'login-app';
+  public panelActive = 'left';
+  public isBusy = false;
+
+  public signUp() {
+    this.isBusy = true;
+    setTimeout(() => {
+      this.isBusy = false;
+    }, 1000);
+  }
+
+  public signIn() {
+    this.isBusy = true;
+    setTimeout(() => {
+      this.isBusy = false;
+    }, 1000);
+  }
 }

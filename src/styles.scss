@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/foundation/foundation.min.css";
+@import "./assets/styles/ui-elements/colors";
+@import "./assets/styles/flex";
+@import "./assets/styles/ui-elements/select";
+@import "./assets/styles/external/datepicker";
+@import "./assets/styles/external/pagination";
+@import "./assets/styles/external/snackbar";
+@import "~ladda/css/ladda";
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: normal;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  ::selection {
+    color: white;
+    background: color(primary, base);
+  }
+}
+
+/* Ladda styles */
+.ladda-button[data-style=expand-right][data-loading] {
+  padding-right: 3rem !important;
+}
+
+.ladda-label {
+  @extend .center-xy;
+}
