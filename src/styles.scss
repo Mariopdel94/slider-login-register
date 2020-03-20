@@ -5,7 +5,6 @@
 @import "./assets/styles/external/datepicker";
 @import "./assets/styles/external/pagination";
 @import "./assets/styles/external/snackbar";
-@import "~ladda/css/ladda";
 
 html,
 body {
@@ -20,13 +19,4 @@ body {
     color: white;
     background: color(primary, base);
   }
-}
-
-/* Ladda styles */
-.ladda-button[data-style=expand-right][data-loading] {
-  padding-right: 3rem !important;
-}
-
-.ladda-label {
-  @extend .center-xy;
 }
